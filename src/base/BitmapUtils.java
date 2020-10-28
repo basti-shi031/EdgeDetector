@@ -40,7 +40,7 @@ public class BitmapUtils {
             outputDir.mkdirs();
         }
 
-        File outputFile = new File(outputDir.getPath() + File.pathSeparator + fileName);
+        File outputFile = new File(outputDir.getPath() + File.separator + fileName);
         ImageIO.write(image, formatName, outputFile);
     }
 

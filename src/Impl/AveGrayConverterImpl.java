@@ -9,10 +9,9 @@ import java.io.IOException;
 /**
  * 最小值灰度图转化算法
  */
-public class MinGrayConverterImpl implements IGrayConverter {
+public class AveGrayConverterImpl implements IGrayConverter {
     @Override
     public int convert2Gray(int r, int g, int b) {
-        int min = Math.min(r, Math.min(g, b));
-        return min;
+        return (r + g + b) / 3;
     }
 }
